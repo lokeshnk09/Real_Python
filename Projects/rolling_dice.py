@@ -21,3 +21,4 @@ def rolling_dice():
 
 
 c = rolling_dice()
+print(c)
