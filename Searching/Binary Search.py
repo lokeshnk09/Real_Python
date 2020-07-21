@@ -22,13 +22,13 @@
 
 
 def contains(elements, value):
-    left, right = 0, len(elements) -1
+    left, right = 0, len(elements) - 1
     if left <= right:
         center = left + right // 2
         if elements[center] == value:
             return True
         if elements[center] > value:
-            return contains(elements[center +1], value)
+            return contains(elements[center + 1], value)
         elif elements[center] < value:
             return contains(elements[:center], value)
 
@@ -36,5 +36,3 @@ def contains(elements, value):
 
 
 s = contains()
-
-
